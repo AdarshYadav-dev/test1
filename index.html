@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Beautiful Memories</title>
+    <title>Your Beautiful Memories</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
 
@@ -65,12 +66,15 @@
                 transform: translateY(100vh) rotate(45deg);
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             100% {
                 transform: translateY(-100px) rotate(45deg);
                 opacity: 0;
@@ -159,8 +163,13 @@
         }
 
         @keyframes rotate {
-            from { transform: rotateY(0deg); }
-            to { transform: rotateY(360deg); }
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
         }
 
         /* Message Button */
@@ -185,8 +194,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
         }
 
         /* Modal */
@@ -294,8 +310,13 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         @keyframes fadeInDown {
@@ -303,6 +324,7 @@
                 opacity: 0;
                 transform: translateY(-30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -314,6 +336,7 @@
                 opacity: 0;
                 transform: translateY(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -358,6 +381,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Animated Hearts Background -->
     <div class="hearts-bg" id="hearts-bg"></div>
@@ -365,7 +389,7 @@
     <!-- Main Container -->
     <div class="container">
         <div class="header">
-            <h1>Our Beautiful Memories</h1>
+            <h1>Your Beautiful Memories</h1>
             <p>Together Forever ❤️</p>
         </div>
 
@@ -394,28 +418,45 @@
         </div>
 
         <!-- Message Button -->
-        <button class="message-btn" id="messageBtn">💌 Read Our Love Message</button>
+        <button class="message-btn" id="messageBtn">💌 Read Your Love Message</button>
     </div>
-
-    <!-- Modal -->
+    <!-- Birthday Modal -->
     <div class="modal" id="modal">
-        <div class="modal-content">
-            <h2>My Dearest Love 💕</h2>
-            <p>Every moment with you is a treasure I hold close to my heart. You are my sunshine on cloudy days, my comfort in difficult times, and my greatest adventure.</p>
-            <p>Thank you for being you, for loving me, and for making every day brighter. Together, we create the most beautiful memories.</p>
-            <p><strong>I love you more than words can express! ❤️</strong></p>
+        <div class="modal-content" style="max-height: 80vh; overflow-y: auto; padding: 20px;">
+            <h2>My Dearest 🤍✨</h2>
+
+            <p>
+                Talking to you always brings a calm and positive feeling 🌿. There’s something very genuine about
+                this connection that I truly value 💫.
+            </p>
+
+            <p>
+                I respect you a lot — the way you think 💭, the way you are 🌸, and the comfort this bond brings 🤍.
+                I believe some connections are meant to grow naturally 🌱, with trust 🤝 and understanding 🌙.
+            </p>
+
+            <p>
+                Whatever the future holds ✨, I’m grateful for this connection 🤍 and the memories we’ll create along
+                the way 📸.
+            </p>
+
+            <p>
+                And today, on your special day 🎉🎂, I wish you all the happiness, joy, and beautiful moments you
+                deserve 🌸💖!
+            </p>
+
             <button class="close-btn" id="closeBtn">Close</button>
         </div>
     </div>
+
 
     <!-- Music Player -->
     <div class="music-player">
         <button class="music-toggle" id="musicToggle">🎵</button>
         <span class="music-text">Background Music</span>
         <audio id="bgMusic" loop>
-            <!-- <source src="music/setlove.mp3" type="audio/mpeg"> -->
             <source src="music/song1.mp3" type="audio/mpeg">
-            <source src="music/song2.mp3" type="audio/mpeg">
+            <!-- <source src="music/song2.mp3" type="audio/mpeg"> -->
         </audio>
     </div>
 
@@ -500,4 +541,5 @@
         }
     </script>
 </body>
+
 </html>
